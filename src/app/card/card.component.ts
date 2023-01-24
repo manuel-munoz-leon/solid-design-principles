@@ -18,7 +18,6 @@ export class CardComponent {
   @Input() img: string = '';
   @Input() title: string = '';
   @Input() text: string = '';
-  @Input() href: string = '';
   @Input() btnText: string = '';
 
   constructor() {}
