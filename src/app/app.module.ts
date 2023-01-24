@@ -9,7 +9,6 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { VideoWidgetComponent } from './widgets/video-widget/video-widget.component';
 import { AnalyticsWidgetComponent } from './widgets/analytics-widget/analytics-widget.component';
 import { CommonModule } from '@angular/common';
-import { NgCardComponent } from './open-close/ng-card/ng-card.component';
 import { AppComponent } from './app.component';
 import { CardComponent } from './card/card.component';
 
@@ -24,7 +23,6 @@ import { CardComponent } from './card/card.component';
   ],
   declarations: [
     AppComponent,
-    NgCardComponent,
     VideoWidgetComponent,
     AnalyticsWidgetComponent,
     CardComponent,

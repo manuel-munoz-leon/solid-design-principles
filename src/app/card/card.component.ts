@@ -13,7 +13,7 @@ import { Component, Input } from '@angular/core';
   ],
 })
 export class CardComponent {
-  isLoading = false;
+  @Input() type: string;
   @Input() isOpen: boolean = true;
   @Input() img: string = '';
   @Input() title: string = '';
@@ -25,12 +25,5 @@ export class CardComponent {
 
   showHideDescription(): void {
     this.isOpen = !this.isOpen;
-  }
-
-  reload(): void {
-    this.isLoading = true;
-    setTimeout(() => {
-      this.isLoading = false;
-    }, 2000);
   }
 }
