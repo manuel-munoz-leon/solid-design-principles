@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { WidgetComponent } from '../widget.component';
 @Component({
   selector: 'analytics-widget',
@@ -6,10 +6,6 @@ import { WidgetComponent } from '../widget.component';
   styleUrls: ['../widgets.scss'],
 })
 export class AnalyticsWidgetComponent extends WidgetComponent {
-  // @Input() text: string = '';
-  // @Input() btnText: string = '';
-  // isLoading = false;
-
   constructor() {
     super();
   }

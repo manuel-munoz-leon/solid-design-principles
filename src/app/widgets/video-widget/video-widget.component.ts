@@ -7,10 +7,6 @@ import { WidgetComponent } from '../widget.component';
   styleUrls: ['../widgets.scss'],
 })
 export class VideoWidgetComponent extends WidgetComponent {
-  // @Input() text: string = '';
-  // @Input() btnText: string = '';
-  // isLoading = false;
-
   @ViewChild('videoPlayer', { static: false }) videoplayer: ElementRef;
   isPlay: boolean = false;
   constructor() {
@@ -20,11 +16,4 @@ export class VideoWidgetComponent extends WidgetComponent {
   toggleVideo() {
     this.videoplayer.nativeElement.play();
   }
-
-  // reload(): void {
-  //   this.isLoading = true;
-  //   setTimeout(() => {
-  //     this.isLoading = false;
-  //   }, 2000);
-  // }
 }
