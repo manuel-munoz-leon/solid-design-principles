@@ -1,20 +1,21 @@
 import { Component, Input } from '@angular/core';
+import { WidgetComponent } from '../widget.component';
 @Component({
   selector: 'analytics-widget',
   templateUrl: './analytics-widget.component.html',
   styleUrls: ['../widgets.scss'],
 })
-export class AnalyticsWidgetComponent {
-  @Input() text: string = '';
-  @Input() btnText: string = '';
-  isLoading = false;
+export class AnalyticsWidgetComponent extends WidgetComponent {
+  // @Input() text: string = '';
+  // @Input() btnText: string = '';
+  // isLoading = false;
 
-  constructor() {}
+  constructor() {
+    super();
+  }
 
   reload(): void {
-    this.isLoading = true;
-    setTimeout(() => {
-      this.isLoading = false;
-    }, 2000);
+    super.reload();
+    console.log('hi manu');
   }
 }
