@@ -19,7 +19,7 @@ export class AppComponent {
   isLoading = false;
   img: string = 'https://miro.medium.com/max/1400/0*VD2FvtlNHDmV_iLb.png';
   title: string = 'Ng Analytics';
-  text: string = 'Site metrics of the year';
+  text: string = 'Site metrics of the year 2022';
   href: string = 'https://angular.io/guide/elements';
   btnText: string = 'Reload Data';
 
