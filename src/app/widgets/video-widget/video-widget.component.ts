@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, Input, ViewChild } from '@angular/core';
 import { WidgetComponent } from '../widget.component';
 import { Toggler, Widget } from '../widget.model';
 
@@ -11,8 +11,9 @@ export class VideoWidgetComponent
   extends WidgetComponent
   implements Widget, Toggler
 {
+  @Input() text: string;
+  @Input() btnText: string;
   @ViewChild('videoPlayer', { static: false }) videoplayer: ElementRef;
-  id: number;
   isPlay: boolean = false;
   videoAction = 'Play >';
   constructor() {

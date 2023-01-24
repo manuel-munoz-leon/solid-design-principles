@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { WidgetComponent } from '../widget.component';
 import { Widget } from '../widget.model';
 @Component({
@@ -10,13 +10,14 @@ export class AnalyticsWidgetComponent
   extends WidgetComponent
   implements Widget
 {
-  id: number = 1242;
+  @Input() text: string;
+  @Input() btnText: string;
   constructor() {
     super();
   }
 
   logData(): void {
-    const taggingData = { tagId: this.id, clientName: 'Amazon' };
+    const taggingData = { tagId: 1234, clientName: 'Amazon' };
     console.table(taggingData);
   }
 

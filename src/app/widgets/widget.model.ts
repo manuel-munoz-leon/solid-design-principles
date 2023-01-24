@@ -1,9 +1,11 @@
 export interface Widget {
-  id: number;
+  text: string;
+  btnText: string;
   logData: () => void;
 }
 
 export interface Toggler {
   isPlay: boolean;
+  videoAction: string;
   toggleVideo: () => void;
 }
