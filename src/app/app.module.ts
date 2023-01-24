@@ -5,6 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatButtonModule } from '@angular/material/button';
 
 import { VideoWidgetComponent } from './widgets/video-widget/video-widget.component';
 import { AnalyticsWidgetComponent } from './widgets/analytics-widget/analytics-widget.component';
@@ -20,6 +21,7 @@ import { CardComponent } from './card/card.component';
     CommonModule,
     MatProgressBarModule,
     MatSlideToggleModule,
+    MatButtonModule,
   ],
   declarations: [
     AppComponent,

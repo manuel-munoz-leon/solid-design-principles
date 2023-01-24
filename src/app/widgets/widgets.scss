@@ -10,4 +10,7 @@ img {
   text-decoration: none;
   border: none;
   cursor: pointer;
+  &.mr {
+    margin-right: 15px;
+  }
 }
