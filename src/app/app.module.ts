@@ -11,6 +11,7 @@ import { AnalyticsWidgetComponent } from './widgets/analytics-widget/analytics-w
 import { CommonModule } from '@angular/common';
 import { NgCardComponent } from './open-close/ng-card/ng-card.component';
 import { AppComponent } from './app.component';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
   imports: [
@@ -26,6 +27,7 @@ import { AppComponent } from './app.component';
     NgCardComponent,
     VideoWidgetComponent,
     AnalyticsWidgetComponent,
+    CardComponent,
   ],
   bootstrap: [AppComponent],
 })
